@@ -1,26 +1,34 @@
+<div class="container">
+  <div class="row">
 
+    <div class="col-sm-4">
+      <img src="http://sec.icec.edu.br/lyceump_associadas/aonline/images/AOLlogin_icec.jpg" 
+      class="img-responsive" alt="Responsive image">
+      <div class="panel panel-default">
+        <!-- ... painel todo aqui ... -->
+        
+      </div>
+    </div><br/><br/><br/><br/>
 
-      <!--Sidebar content-->
-	<div class="container-ava">
+    <form class="perguntas">
+        <div ng-repeat="pergunta in perguntas">
+          <h3>{{pergunta.questao}}</h3>
 
-      <!--Body content-->
-    <div class="perguntas">
-      <label  ng-repeat="pergunta in perguntas">
-        <h3>{{pergunta.questao}}</h3>
-        <div  ng-repeat="listaresposta in pergunta.listaDeResposta">
-          <div class="col-md-8">
+       <div  ng-repeat="listaresposta in pergunta.listaDeResposta">
+          
                <p><input type="radio" value="{{listaresposta.resposta}}" 
             ng-model="$parent.resposta"
             required />{{listaresposta.resposta}}</p>
-          </div>
-          
-        </div>
 
-      </label>
-    </div>
-     <!--End content-->
+      </div>
+      <!-- ... todos os campos aqui ... -->
+    </form>
+
+  </div>
+</div>
+
 
       <button >Responder</button>
- </div>
+ 
 
 
