@@ -1,0 +1,70 @@
+
+[
+  {
+    "questaoId": 1,
+    "questao": "Quantas horas de atividade remunerada (não contar estágio remunerado) que você cumpre? ",
+    "listaDeResposta": [
+    {"resposta":" Não exerço atividade remunerada "},
+    {"resposta": " Trabalho eventualmente, sem vínculo trabalhista "},
+    {"resposta": "Trabalho até 20 horas "}, 
+    {"resposta": " Trabalho mais de 20 horas e menos de 40 horas semanais. "},
+    {"resposta": "Trabalho 40 ou mais horas semanais. "}]    
+
+  },{
+  	"questaoId": 2,
+    "questao": " As mensalidades do seu curso são pagas:",
+    "listaDeResposta": [
+    {"resposta":" Por você mesmo, mediante recursos oriundos de seu emprego"},
+     {"resposta":"Por seus pais ou responsáveis"},
+      {"resposta":"Por seu cônjuge"},
+      {"resposta": "Outro. Qual?"}
+   ]},{
+  	"questaoId": 3,
+    "questao": " Em relação a sua família, assinale:",
+    "listaDeResposta": [
+    {"resposta":"A maioria da minha família (pais, irmãos, cônjuge) possui curso superior"},
+     {"resposta":"A maioria da minha família (pais, irmãos, cônjuge) não possui curso superior."},
+      {"resposta":" A maioria da minha família (pais, irmãos, cônjuge) possui pós-graduação."},
+       {"resposta":"A maioria da minha família (pais, irmãos, cônjuge) não possui ensino médio completo."},
+        {"resposta":" A maioria da minha família (pais, irmãos, cônjuge) não possui ensino fundamental completo"}
+   ]},{
+  	"questaoId": 4,
+    "questao": " Você recebe bolsa ou financiamento para custeio das despesas do curso? ",
+    "listaDeResposta": [
+    {"resposta":" Bolsa 8 horas"},
+     {"resposta":" Bolsa 4 horas "},
+      {"resposta":"Nenhum "},
+       {"resposta":"Outro. Qual? "}
+   ]},{
+  	"questaoId": 5,
+    "questao": " Número de horas semanais que você se dedica aos estudos, excetuando-se as horas de aula:",
+    "listaDeResposta": [
+    {"resposta":" Nenhuma, apenas assisto às aulas. "},
+     {"resposta":"Uma a duas horas por semana"},
+      {"resposta":"Três a cinco horas por semana"},
+       {"resposta":" Seis a oito horas por semana "},
+        {"resposta":" Mais de oito horas por semana "}
+   ]},{
+  	"questaoId": 6,
+    "questao": "Freqüência com que você se atualiza a respeito dos acontecimentos do mundo contemporâneo:",
+    "listaDeResposta": [
+    {"resposta":"Raramente "},
+     {"resposta":"Uma vez por semana "},
+      {"resposta":"Duas vezes por semana "},
+       {"resposta":"Três vezes por semana "},
+        {"resposta":"Quatro ou mais vezes por semana"},
+        {"resposta":"Diariamente"}
+   ]},{
+  	"questaoId": 7,
+    "questao": "Quantas horas de atividade remunerada (não contar estágio remunerado) que você cumpre? ",
+    "listaDeResposta": [
+    {"resposta":""},
+     {"resposta":""},
+      {"resposta":""},
+       {"resposta":""},
+        {"resposta":""}
+   ]}
+
+
+  ]
+

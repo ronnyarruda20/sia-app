@@ -1,4 +1,4 @@
-﻿# AngularJS Phone Catalog Tutorial Application
+# AngularJS Phone Catalog Tutorial Application
 
 ## Overview
 
@@ -23,11 +23,3 @@ For more information on AngularJS please check out http://angularjs.org/
 [jasmine]: http://pivotal.github.com/jasmine/
 [karma]: http://karma-runner.github.io
 # sia-app 
-
-
-echo # sia-app >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/ronnyarruda20/sia-app.git
-git push -u origin master

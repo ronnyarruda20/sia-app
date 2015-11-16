@@ -1,0 +1,26 @@
+
+
+      <!--Sidebar content-->
+	<div class="container-ava">
+
+      <!--Body content-->
+    <div class="perguntas">
+      <label  ng-repeat="pergunta in perguntas">
+        <h3>{{pergunta.questao}}</h3>
+        <div  ng-repeat="listaresposta in pergunta.listaDeResposta">
+          <div class="col-md-8">
+               <p><input type="radio" value="{{listaresposta.resposta}}" 
+            ng-model="$parent.resposta"
+            required />{{listaresposta.resposta}}</p>
+          </div>
+          
+        </div>
+
+      </label>
+    </div>
+     <!--End content-->
+
+      <button >Responder</button>
+ </div>
+
+

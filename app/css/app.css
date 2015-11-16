@@ -1,0 +1,22 @@
+/* app css stylesheet */
+
+body {
+  padding-top: 20px;
+}
+
+h1 {
+  border-bottom: 1px solid gray;
+}
+
+.container-ava {
+	
+	margin-top: 40px;
+	margin-left: 100px;
+	margin-right: 100px;
+	background: #fff;
+	border-radius: 3px;
+	border: 1px;
+	
+	
+}
+
