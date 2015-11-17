@@ -10,25 +10,22 @@
       </div>
     </div><br/><br/><br/><br/>
 
-    <form class="perguntas">
-        <div ng-repeat="pergunta in perguntas">
-          <h3 class="enunciado">{{pergunta.questao}}</h3>
+    <form>
+          <h1 ng-if="semSucesso" ng-bind="semSucesso" class="bg-danger"><h1>
+          <h3 class="enunciado">{{perguntas.questao}}</h3>
 
-       <div  ng-repeat="listaresposta in pergunta.listaDeResposta">
-          
+       <div  ng-repeat="listaresposta in perguntas.listaDeResposta">          
                <p><input type="radio" value="{{listaresposta.resposta}}" 
-            ng-model="$parent.resposta"
-            required />{{listaresposta.resposta}}</p>
-
-      </div>
-      <!-- ... todos os campos aqui ... -->
+              ng-model="$parent.resposta"required />{{listaresposta.resposta}}</p> 
+            </div>
     </form>
 
   </div>
+
+   <button class="btn btn-primary" >Responder</button>
 </div>
 
 
-      <button class="btn btn-success">Responder</button>
- 
+     
 
 

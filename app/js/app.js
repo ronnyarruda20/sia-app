@@ -21,7 +21,7 @@ siaApp.config(['$routeProvider',
           controller:'Login'
       }).
       otherwise({
-        redirectTo: '/avaliacao'
+        redirectTo:'/avaliacao'
       });
   }]);
 
