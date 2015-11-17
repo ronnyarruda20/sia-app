@@ -12,8 +12,8 @@ var siaApp = angular.module('siaApp', [
 siaApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when('/avaliacao', {
-        templateUrl: 'paginas/questoes.html',
+      when('/avaliacao/:questaoId', {
+        templateUrl: 'paginas/listaDePerguntas.html',
         controller: 'ListaDeQuestao'
       }).
       when('/login',{
@@ -24,3 +24,4 @@ siaApp.config(['$routeProvider',
         redirectTo: '/avaliacao'
       });
   }]);
+

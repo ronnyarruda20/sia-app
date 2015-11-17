@@ -1,0 +1,11 @@
+{
+    "questaoId": 2,
+    "questao": "Quantas horas de atividade remunerada (não contar estágio remunerado) que você cumpre? ",
+    "listaDeResposta": [
+    {"resposta":" Não exerço atividade remunerada "},
+    {"resposta": " Trabalho eventualmente, sem vínculo trabalhista "},
+    {"resposta": "Trabalho até 20 horas "}, 
+    {"resposta": " Trabalho mais de 20 horas e menos de 40 horas semanais. "},
+    {"resposta": "Trabalho 40 ou mais horas semanais. "}]    
+
+  }

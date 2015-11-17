@@ -6,23 +6,16 @@ var avaliacaoServices = angular.module('avaliacaoServices', ['ngResource']);
 
 avaliacaoServices.factory('Avaliacao', ['$resource',
   function($resource){
-    return $resource('json/questoes.json', {}, {
-      query: {method:'GET', isArray:true}
+    return $resource('json/questoes/:questaoId.json', {}, {  
+      buscaPorId: {method:'GET',params:{questaoId:'questoes'}}
     });
   }]);
 
- avaliacaoServices.factory('LoginServices', ['$http',
-	function($http){
-		return $http({
-  method: 'GET',
-  url: 'json/usuario.json'
-   	}).then(function successCallback(response) {
-
-   		return response;
-     
-  	}, function errorCallback(response) {
-  	console.log('sem sucesso');
-  });
+ avaliacaoServices.factory('LoginServices', ['$resource',
+	function($resource){
+		return $resources({'json/login/:loginId.json', {},{
+      user:{method:'GET', params:{loginId: 'loginId'}}
+    });
 
 
  }]);

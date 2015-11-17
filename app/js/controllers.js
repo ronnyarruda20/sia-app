@@ -9,7 +9,7 @@ var usuario,senha;
 
 siaControllers.controller('ListaDeQuestao', ['$scope', 'Avaliacao',
   function($scope, Avaliacao) {
-    $scope.perguntas = Avaliacao.query();
+    $scope.perguntas = Avaliacao.buscaPorId();
   }]);
 
 siaControllers.controller('Login',['$scope', 'LoginServices','$routeParams',

@@ -12,7 +12,7 @@
 
     <form class="perguntas">
         <div ng-repeat="pergunta in perguntas">
-          <h3>{{pergunta.questao}}</h3>
+          <h3 class="enunciado">{{pergunta.questao}}</h3>
 
        <div  ng-repeat="listaresposta in pergunta.listaDeResposta">
           
@@ -28,7 +28,7 @@
 </div>
 
 
-      <button >Responder</button>
+      <button class="btn btn-success">Responder</button>
  
 
 
