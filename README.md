@@ -1,11 +1,11 @@
-# AngularJS Phone Catalog Tutorial Application
+# Front End da aplicação SIA (Sistema Institucional de Avaliação)
 
 ## Overview
 
 
 Sistema de Avaliaçao para atender a faculdade com relação a avaliação institucional
 
-For more information on AngularJS please check out http://angularjs.org/
+http://www.icec.edu.br/
 
 [7 Zip]: http://www.7-zip.org/
 [angular-seed]: https://github.com/angular/angular-seed

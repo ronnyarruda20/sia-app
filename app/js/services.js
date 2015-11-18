@@ -13,7 +13,7 @@ avaliacaoServices.factory('Avaliacao', ['$resource',
 
  avaliacaoServices.factory('LoginServices', ['$resource',
 	function($resource){
-		return $resource('json/login/123.json', {},{
+		return $resource('json/login/login.json', {},{
       user:{method:'GET'}
     });
 
