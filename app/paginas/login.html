@@ -1,29 +1,26 @@
 <!-- Begin Page Content -->
 	
 	<div id="container-ava">
+
+		<label for="nome" >Login</label>
+		<input type="name" ng-model="name" >
 		
-		<form>
+		<label for="senha">Senha</label>
+		<input type="password" ng-model="senha">
+
 		
-		<label for="name">Login:</label>
-		
-		<input ng-model="user.nome" type="name">
-		
-		<label for="username">Senha:</label>
-		
-		<p>
-		
-		<input ng-model="user.senha" type="password">
-		
+		<label class="bg-danger">{{resposta}}</label>
 		<div id="lower">
 		
-		<input type="checkbox"><label class="check" for="checkbox">Me mantenha conectado</label>
+		<input type="checkbox">
+		<label class="check" for="checkbox">Me mantenha conectado</label>
 		
-		<input type="submit" ng-click="login()">
+
+		<input type="submit" ng-click="entrar()">
 		
 		</div>
 		
-		</form>
 		
-	
+</div>
 	
 	<!-- End Page Content -->
