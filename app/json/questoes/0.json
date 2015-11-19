@@ -1,0 +1,10 @@
+{
+    "questaoId": 0,
+    "questao": "As mensalidades do seu curso são pagas:",
+    "listaDeResposta": [
+    {"resposta":"  Por você mesmo, mediante recursos oriundos de seu emprego "},
+    {"resposta": "  Por seus pais ou responsáveis. "},
+    {"resposta": " Por seu cônjuge."}, 
+    {"resposta": "  Outro. Qual? "}     
+
+  }

@@ -13,8 +13,8 @@ avaliacaoServices.factory('Avaliacao', ['$resource',
 
  avaliacaoServices.factory('LoginServices', ['$resource',
 	function($resource){
-		return $resource('json/login/login.json', {},{
-      user:{method:'GET'}
+		return $resource('json/login/:loginId.json', {},{
+      user:{method:'GET',params:{loginId:'loginId'}}
     });
 
  }]);

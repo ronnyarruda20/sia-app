@@ -2,53 +2,64 @@
 
 /* Controllers */
 
-var siaControllers = angular.module('siaControllers', []);
+var siaControllers = angular.module('siaControllers', ['ngStorage']);
 
 
-var usuario,senha;
-
-siaControllers.controller('ListaDeQuestao', ['$scope', 'Avaliacao', '$routeParams',
-  function($scope, Avaliacao, $routeParams) {
+siaControllers.controller('ListaDeQuestao', ['$scope', 'Avaliacao', '$routeParams','$sessionStorage',
+  function($scope, Avaliacao, $routeParams, $sessionStorage) {
+  	
+  	$routeParams.questaoId = $sessionStorage.soma;
    Avaliacao.buscaPorId({questaoId: $routeParams.questaoId},function(sucesso){
    	
     	  $scope.perguntas = sucesso;
+    	  $scope.perfil = $sessionStorage.perfil;
 
     },function(){
 
     	$scope.semSucesso = 'Sem valor a apresentar';
 
     });
+   $scope.somar = function(){
+   		$sessionStorage.soma += 1;
+   		location.reload();
+   }
   }]);
 
- var login, senha, usuario;
+ 
 
-siaControllers.controller('Login',['$scope', 'LoginServices','$location',
-	function($scope, LoginServices, $location){
-		
- 	LoginServices.user(function(comSucesso){
- 		
- 		usuario = comSucesso;
-
-	},function(){
-		$scope.resposta = 'Login ou Senha invalidos';
-	});
-
+siaControllers.controller('Login',['$scope', 'LoginServices','$location', '$sessionStorage',
+	function($scope, LoginServices, $location, $sessionStorage){
+	
+	var usuarios;
+	
 	$scope.entrar = function(){
 
- 	if($scope.name == usuario.CPF && $scope.senha == usuario.matricula){
+		LoginServices.user({loginId: $scope.nome}, function(comSucesso){
+			usuarios = comSucesso;
+			$sessionStorage.perfil = usuarios.perfil;
+			if($scope.nome == usuarios.CPF && $scope.senha == usuarios.matricula){
 
- 		$location.path('/Avaliacao');
- 	}else{
- 		$scope.resposta = 'Login ou Senha Invalido'
- 	}
-  }
-	 
+				$location.path('/avaliacao');
+
+			}else{
+
+				$scope.valorIncorreto = 'Login ou senha incorretos';
+			}
+		},function(semSucesso){
+
+			$scope.valores = 'Login ou senha incorreto 2';
+		});
+		
+ 	
+	}
+
 	
-	}]);
+	
+}]);
 
 
 
 	
-  
+ 
 
  

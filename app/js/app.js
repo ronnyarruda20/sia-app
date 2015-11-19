@@ -12,13 +12,10 @@ var siaApp = angular.module('siaApp', [
 siaApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when('/avaliacao/:questaoId', {
+      when('/avaliacao', {
         templateUrl: 'paginas/listaDePerguntas.html',
         controller: 'ListaDeQuestao'
-      }).
-      when('/avaliacao', {
-        templateUrl: 'paginas/first.html'
-      }).
+      }). 
       when('/login',{
           templateUrl: 'paginas/login.html',
           controller:'Login'
