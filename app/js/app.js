@@ -20,6 +20,10 @@ siaApp.config(['$routeProvider',
           templateUrl: 'paginas/login.html',
           controller:'Login'
       }).
+      when('/precadastro',{
+          templateUrl:'paginas/formPreCadastro.html',
+          controller:'PreCadastro'
+      }).
       otherwise({
         redirectTo:'/login'
       });

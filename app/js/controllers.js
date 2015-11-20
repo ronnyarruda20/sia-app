@@ -52,13 +52,28 @@ siaControllers.controller('Login',['$scope', 'LoginServices','$location', '$sess
 		
  	
 	}
-
-	
 	
 }]);
 
 
+siaControllers.controller('PreCadastro',['$scope', '$sessionStorage','$location',
+	function($scope, $sessionStorage, $location){
 
+		$scope.add = function(){
+
+			$sessionStorage.user = {nome: $scope.Nome};
+
+			if($sessionStorage.use != null){
+
+				alert('nao nullo');
+
+			}else{
+				alert('esta nullo');
+			}
+
+		}
+
+	}]);
 	
  
 
