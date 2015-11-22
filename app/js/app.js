@@ -17,7 +17,7 @@ siaApp.config(['$routeProvider',
         controller: 'ListaDeQuestao'
       }). 
       when('/login',{
-          templateUrl: 'paginas/login.html',
+          templateUrl: 'paginas/login2.html',
           controller:'Login'
       }).
       when('/precadastro',{
